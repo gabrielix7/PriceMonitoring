@@ -39,7 +39,7 @@ def myProgram():
 
         if myLinks.find(myString1, 0, len(myLinks)) == 0: # se face identificarea site-ului, funcția find caută string-ul în link-ul extras din fișier
 
-            print("for  MediaGalaxy:")
+            # print("for  MediaGalaxy:")
 
             soup = makeSoup(myLinks) # link-ului identificat i se aplică funcția makeSoup, conectându-ne la site pentru a putea accesa datele HTML
 
@@ -57,7 +57,7 @@ def myProgram():
 
             currentData = str(dateToday.day) + '/' + str(dateToday.month) + ' ' + str(dateToday.hour) + ':' + str(dateToday.minute) + ':' + str(dateToday.second) # formatarea datei curente
 
-            print(title.text, '\n', price.text, ' Lei' '\n', currentData, '\n', href, '\n')
+#             print(title.text, '\n', price.text, ' Lei' '\n', currentData, '\n', href, '\n')
 
             newHref = re.sub('\W+', '', href) # pentru a putea crea un fișier cu numele link-ului produsului, din acesta trebuie extrase caracterele speciale
 
@@ -73,7 +73,7 @@ def myProgram():
 
         elif myLinks.find(myString2, 0, len(myLinks)) == 0: # se face identificarea site-ului, funcția find caută string-ul în link-ul extras din fișier
 
-            print("for Carrefour:")
+#             print("for Carrefour:")
 
             soup = makeSoup(myLinks) # link-ului identificat i se aplică funcția makeSoup, conectându-ne la site pentru a putea accesa datele HTML
 
@@ -89,7 +89,7 @@ def myProgram():
 
             currentData = str(dateToday.day) + '/' + str(dateToday.month) + ' ' + str(dateToday.hour) + ':' + str(dateToday.minute) + ':' + str(dateToday.second) # formatarea datei curente
 
-            print(title.text, '\n', price.text, '\n', currentData, '\n', href, '\n') 
+#             print(title.text, '\n', price.text, '\n', currentData, '\n', href, '\n') 
 
             newHref = re.sub('\W+','', href) # pentru a putea crea un fișier cu numele link-ului produsului, din acesta trebuie extrase caracterele speciale
 
@@ -105,7 +105,7 @@ def myProgram():
 
         elif myLinks.find(myString3, 0, len(myLinks)) == 0: # se face identificarea site-ului, funcția find caută string-ul în link-ul extras din fișier
 
-            print("for Altex:")     
+#             print("for Altex:")     
  
             soup = makeSoup(myLinks)  # link-ului identificat i se aplică funcția makeSoup, conectându-ne la site pentru a putea accesa datele HTML
 
@@ -121,7 +121,7 @@ def myProgram():
 
             currentData = str(dateToday.day) + '/' + str(dateToday.month) + ' ' + str(dateToday.hour) + ':' + str(dateToday.minute) + ':' + str(dateToday.second) # formatarea datei curente
 
-            print(title.text, '\n', price.text, ' Lei' '\n', currentData, '\n',  href, '\n') 
+#             print(title.text, '\n', price.text, ' Lei' '\n', currentData, '\n',  href, '\n') 
 
             newHref = re.sub('\W+','', href) # pentru a putea crea un fișier cu numele link-ului produsului, din acesta trebuie extrase caracterele speciale
 
