@@ -54,7 +54,6 @@ Va crea un fișier cu numele link-ului produsului și va salva acolo datele nece
 **myClient()**
 va primi ca parametru unul sau mai multe link-uri de la tastatură.
 
-
 Va citi datele produsului din fișier și va face grafic cu acestea. 
 
 [Vezi aici](https://ibb.co/1dFQGn3)
@@ -63,8 +62,13 @@ Graficul se va salva automat in format ".png"
 
 La sfârșit am definit două variabile numite **firstThread** și **secondThread** în care am apelat funcțiile prestabilite pentru thread.
 
-# Contribuitori:
+## Contribuitori:
 Dohatcu Andrei-Gabriel
 
 Chivu Denis-Andrei
 
+## Edit: 
+
+Avem prezentă o eroare după ce programul este rulat, dar funcționalitatea acestuia nu este afectată.
+
+[Vezi aici](https://ibb.co/C5q2CMX)
